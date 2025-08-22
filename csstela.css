@@ -1,0 +1,171 @@
+
+body{
+    margin: auto;
+}
+
+.desktop{
+    height: 95vh;
+    width: 100vw;
+    background-image:  url(/imgs/SI_bliss_site.png);
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;  
+
+}
+
+.navigationbar{
+    height: 5vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #166fec, #345dc5, #2c4c9c);
+    display: flex;
+    justify-content: space-between;
+}
+
+.windowsbutton {
+    height: 5vh;
+    width: 9vw;
+    background: linear-gradient(to bottom, #4ab14e, #0d6b14);
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid #0a4f0e;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    padding-left: 8px;
+    box-shadow: inset 1px 1px 2px rgba(255,255,255,0.4),
+                inset -1px -1px 2px rgba(0,0,0,0.3),
+                1px 1px 4px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.windowsbutton:hover {
+    background: linear-gradient(to bottom, #57c85d, #0d6b14);
+}
+
+.clockbutton{
+    border: solid 4px #18b6f7;
+    height: 5vh;
+    width: 9vw;
+    background-color: #0c9ced;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.quadrados{
+    height: 1vh;
+    width: 1.35vw;
+    border: none;
+    border-radius: 0px 10px 0px 10px;
+    box-shadow: 10px 5px 5px black;
+    
+}
+
+.time {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+}
+
+img{
+    height: 7vh;
+    width: 3.5vw ;
+}
+
+a{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.logo_windows{
+    height: 3vh;
+    width: 2vw;
+}
+
+
+
+.recycle_bin_window .content {
+    background-color: #D3D3D3;
+    margin: 15% auto; 
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'LexendDeca-Regular';
+    color: var(--title);
+}
+.recycle_bin_window {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Fundo escuro do modal */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }
+
+    /* Janela estilo XP */
+    .recycle_bin_window {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        background-color: #ece9d8;
+        border: 2px solid #000080;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    }
+
+    /* Barra de título */
+    .title-bar {
+        background: linear-gradient(#000080, #000060);
+        color: white;
+        padding: 5px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Botão de fechar */
+    .close-btn {
+        background: #c0c0c0;
+        border: 1px solid #808080;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+        line-height: 18px;
+    }
+    .close-btn:hover {
+        background: red;
+        color: white;
+    }
+
+    /* Conteúdo */
+    .content {
+        padding: 20px;
+    }
